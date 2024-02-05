@@ -3,9 +3,9 @@ async function main() {
 
 	console.log("Deploying contracts with the account:", deployer.address)
 
-	const token = await ethers.deployContract("Token")
+	const contract = await ethers.deployContract("PagodasFlattened")
 
-	console.log("Token address:", await token.getAddress())
+	console.log("Contract:", contract)
 }
 
 main()
